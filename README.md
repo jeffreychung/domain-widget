@@ -31,7 +31,9 @@ To see a live example, visit http://resellers.github.io/domain-widget/
 ### Note
 If you are using bootstrap you will want to add the following css:
 ```css
-.form-inline .domain-search input {
-    width:540px;
+@media (min-width: 768px) {
+  .form-inline .domain-search input {
+      width:540px;
+  }
 }
 ```
