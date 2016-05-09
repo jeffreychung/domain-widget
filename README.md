@@ -14,7 +14,8 @@ To see a live example, visit http://resellers.github.io/domain-widget/
 ## Getting Started
 
 1. Embed the example into your page
- ```html
+
+```html
 <!-- domain-widget being here -->
 <form class="form-inline" action="https://www.secureserver.net/domains/search.aspx?checkAvail=1&amp;prog_id={YOUR_PROG_ID}" method="post">
   <div class="form-group domain-search">
@@ -24,6 +25,7 @@ To see a live example, visit http://resellers.github.io/domain-widget/
 </form>
 <!-- domain-widget end here -->
 ```
+
 2. Change `{YOUR_PROG_ID}`  (replace the entire value included the `{}`)
 
 ### Note
