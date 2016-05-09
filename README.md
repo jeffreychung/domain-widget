@@ -13,13 +13,25 @@ To see a live example, visit http://resellers.github.io/domain-widget/
 
 ## Getting Started
 
-1. Embed the example from `index.html` into your page
-2. Change the form's action to point to your reseller storefront (www.secureserver.net or yourcustomdomain.com - the Custom Domain feature can be enabled here: https://reseller.secureserver.net/Settings/CustomDomainSettings.aspx or https://reseller.godaddy.com/Settings/CustomDomainSettings.aspx))
+1. Embed the example into your page
+2.
 ```html
-<form action="http://www.secureserver.net/domains/search.aspx?checkAvail=1&amp;prog_id=domainspricedright" method="post">
+<!-- domain-widget being here -->
+<form class="form-inline" action="https://www.secureserver.net/domains/search.aspx?checkAvail=1&amp;prog_id={YOUR_PROG_ID}" method="post">
+  <div class="form-group domain-search">
+    <input type="text" class="form-control" placeholder="Search for a new domain" name="domainToCheck" >
+  </div>
+  <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span> Search</button>
+</form>
+<!-- domain-widget end here -->
 ```
-3. Change your 'prog_id' - (found on https://reseller.secureserver.net/Settings/default.aspx or https://reseller.godaddy.com/Settings/default.aspx  )
-```html
-<form action="http://www.secureserver.net/domains/search.aspx?checkAvail=1&amp;prog_id=domainspricedright" method="post">
+3. Change '{YOUR_PROG_ID}'  (replace the entire value included the `{}`)
+
+### Note
+If you are using bootstrap you will want to add the following css:
+```css
+.form-inline .domain-search input {
+    width:540px;
+}
 ```
-4. Add the appropriate domain extensions you'd like to offer
+
