@@ -9,12 +9,6 @@ strong {
   font-weight:700;
 }
 
-@media (min-width: 768px) {
-  .form-inline .domain-search input {
-      width:540px;
-  }
-}
-
 .header ul {
   list-style:none;
   height:40px;

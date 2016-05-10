@@ -17,23 +17,17 @@ To see a live example, visit http://resellers.github.io/domain-widget/
 
 ```html
 <!-- domain-widget being here -->
-<form class="form-inline" action="https://www.secureserver.net/domains/search.aspx?checkAvail=1&amp;prog_id={YOUR_PROG_ID}" method="post">
-  <div class="form-group domain-search">
-    <input type="text" class="form-control" placeholder="Search for a new domain" name="domainToCheck" >
-  </div>
-  <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span> Search</button>
-</form>
+<div id="domain_search">
+  <form action="https://www.secureserver.net/domains/search.aspx?checkAvail=1&amp;prog_id={YOUR_PROG_ID}" method="post" class="validate" novalidate >
+    <div>
+      <input type="text" value="" name="domainToCheck" class="domainToCheck" id="domainToCheck" placeholder="Search for a new domain" required>
+      <input type="submit" value="Search" name="search" id="search" class="button">
+    </div>
+  </form>
+</div>
 <!-- domain-widget end here -->
 ```
 
 2. Change `{YOUR_PROG_ID}`  (replace the entire value included the `{}`)
 
-### Note
-If you are using bootstrap you will want to add the following css:
-```css
-@media (min-width: 768px) {
-  .form-inline .domain-search input {
-      width:540px;
-  }
-}
-```
+
